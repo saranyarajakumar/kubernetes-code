@@ -1,9 +1,9 @@
 provider "aws" {
-  region = "us-east-1"
+  region = "eu-west-2"
 }
 terraform {
   backend "s3" {
-    region = "us-east-1"
+    region = "eu-west-2"
     bucket = "devops4solutions-terraform"
     key    = "eks_cluster_automode.tfstate"
   }
