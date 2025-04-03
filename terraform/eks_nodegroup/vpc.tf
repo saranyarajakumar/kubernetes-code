@@ -3,7 +3,7 @@ module "vpc" {
   name = "eks-vpc"
   cidr = "12.0.0.0/16"
 
-  azs             = ["us-east-1a", "us-east-1b", "us-east-1c"]
+  azs             = ["eu-west-2a", "eu-west-2b", "eu-west-2c"]
   private_subnets = ["12.0.1.0/24", "12.0.2.0/24", "12.0.3.0/24"]
   public_subnets  = ["12.0.101.0/24", "12.0.102.0/24", "12.0.103.0/24"]
   enable_nat_gateway = true
